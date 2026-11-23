@@ -1,0 +1,43 @@
+@use 'styles/colors' as *;
+
+// Toutes les couleurs exposées en propriétés CSS (base d'un futur mode sombre)
+:root {
+  @each $name, $value in $colors {
+    --color-#{$name}: #{$value};
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem; // hauteur de l'en-tête fixe
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: var(--color-accent-light);
+  color: var(--color-primary);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 3px;
+}
+
+// Panneau bleu très clair avec motif de points (comme la bannière)
+.dot-panel {
+  background-color: var(--color-background-alt);
+  background-image: radial-gradient(var(--color-pattern-dot) 1px, var(--color-transparent) 1.2px);
+  background-size: 22px 22px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
