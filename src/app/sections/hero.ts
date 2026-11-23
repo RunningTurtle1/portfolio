@@ -21,6 +21,7 @@ import { Icon } from '../shared/icon';
           <p class="mt-6 text-xl text-text-muted sm:text-2xl">
             {{ h.subtitle }} <strong class="font-bold text-primary">{{ h.subtitleStrong }}</strong>
           </p>
+          <p class="mt-4 max-w-xl text-base leading-relaxed text-text sm:text-lg">{{ h.lead }}</p>
 
           <ul class="mt-8 flex flex-wrap gap-3">
             @for (pill of h.pills; track pill.label) {

@@ -26,6 +26,7 @@ export const EN: SiteContent = {
     titleLine2: 'more value created.',
     subtitle: 'Time is precious.',
     subtitleStrong: 'Automate it.',
+    lead: 'With a background in accounting and management control, I build tools designed around your profitability and cash flow, not just the technology.',
     pills: [
       { icon: 'zap', label: 'Automation', featured: true },
       { icon: 'monitor', label: 'Website redesign' },
@@ -45,11 +46,12 @@ export const EN: SiteContent = {
       { value: '100%', label: 'remote, fixed-price' },
     ],
   },
+  trust: { title: 'They trusted me' },
   services: {
     eyebrow: 'Services',
     title: 'What I can do for you',
     intro:
-      'I start from the day-to-day friction in your business and deliver a tool that saves your team time within the first few weeks.',
+      'I start from the day-to-day friction in your business and think like a manager: how much time and money does this process cost you? Then I deliver a tool that wins it back for your team within the first few weeks.',
     featuredBadge: 'Core service',
     items: [
       {
@@ -70,20 +72,20 @@ export const EN: SiteContent = {
         pitch:
           'An outdated, slow or hard-to-update website holds your business back. I rebuild it fast, clear and mobile-friendly.',
         benefits: [
-          'A modern site that builds trust',
-          'Fast pages that rank well',
-          'Content that is easy to update',
+          'A fast, mobile-first site built to rank well on Google',
+          'Text and pages you can update yourself, no developer needed',
+          'Your existing content and search rankings preserved during the move',
         ],
       },
       {
         icon: 'gauge',
         title: 'Optimization',
         pitch:
-          'Is your existing application slow, unstable or expensive to maintain? I find what is holding it back and fix it.',
+          'Is your existing application slow, unstable or expensive to maintain? I start with an audit: I measure, identify the causes and hand you a costed action plan before fixing anything.',
         benefits: [
-          'Shorter loading times',
-          'Fewer outages and incidents',
-          'A healthy foundation for what comes next',
+          'A written diagnosis: what slows things down, what breaks, what costs',
+          'Fixes prioritized by their impact on your business',
+          'Before / after measurements (response times, incidents)',
         ],
       },
     ],
@@ -103,7 +105,7 @@ export const EN: SiteContent = {
     },
     items: [
       {
-        title: 'Automated payment collection for a communication platform',
+        title: 'Customer payment tracking, automated end to end',
         context: 'Communication SaaS platform',
         period: 'Since 2022',
         ongoing: true,
@@ -120,8 +122,8 @@ export const EN: SiteContent = {
         stack: ['Node.js', 'TypeScript', 'Serverless functions (AWS Lambda)', 'REST APIs'],
       },
       {
-        title: 'Modernizing an online booking platform',
-        context: 'My Simply Agenda',
+        title: 'An ageing platform modernized without starting over',
+        context: 'Online booking SaaS platform',
         period: '2021 – 2022',
         problem: 'An ageing SaaS booking platform that was hard to evolve and maintain.',
         solution:
@@ -136,7 +138,7 @@ export const EN: SiteContent = {
       },
       {
         title: 'Paper and Excel audits replaced by an application',
-        context: 'Free · Security department',
+        context: 'Internal business application',
         period: '2019 – 2021',
         problem:
           'Security audits were handled on paper and in Excel files: re-typing, multiple versions, hard to follow up.',
@@ -190,6 +192,21 @@ export const EN: SiteContent = {
       { icon: 'globe', title: '100% remote', text: 'In English or French, with regular check-ins.' },
       { icon: 'calendar', title: 'From a few days to a few months', text: 'An engagement sized to your need.' },
     ],
+    afterDelivery: {
+      title: 'After go-live',
+      items: [
+        {
+          icon: 'key',
+          title: 'You own your tool',
+          text: 'The source code and the solution belong to you. You can evolve it as you see fit, with or without me.',
+        },
+        {
+          icon: 'wrench',
+          title: 'Maintenance if you want it',
+          text: 'An optional maintenance plan for fixes, updates and small improvements.',
+        },
+      ],
+    },
   },
   about: {
     eyebrow: 'About',
@@ -199,20 +216,6 @@ export const EN: SiteContent = {
       'Before coding, I studied accounting and management control. I understand profitability, cash flow and reporting: every project is designed for a measurable gain.',
     ],
     photoAlt: 'Portrait of Camille Hayot',
-    educationTitle: 'Education',
-    education: [
-      {
-        title: 'French state-certified web developer diploma (RNCP level III)',
-        school: 'OpenClassrooms',
-        years: '2018 – 2019',
-      },
-      {
-        title: 'Bachelor’s degree in Economics and Management · Accounting and management control',
-        school: 'Université Paris Nanterre',
-        years: '2013 – 2016',
-        note: 'A real asset to understand your financial challenges',
-      },
-    ],
     stackTitle: 'Technologies',
     stackMain: {
       label: 'Day to day',
@@ -226,6 +229,7 @@ export const EN: SiteContent = {
     text: 'Tell me in a few lines about the task that wastes your time. I’ll reply within 48 hours with a first idea of a solution.',
     cta: "Contact me, let's talk",
     orWrite: 'or email me directly at',
+    otherChannels: 'You can also find me on',
     reassurance: ['No-commitment call', 'Fixed-price quote', 'English or French'],
   },
   footer: {

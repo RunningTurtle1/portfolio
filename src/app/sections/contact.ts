@@ -32,6 +32,14 @@ import { Icon } from '../shared/icon';
             {{ ct.orWrite }}
             <a [href]="mailto" class="font-semibold text-secondary-dark underline-offset-4 hover:underline">{{ email }}</a>
           </p>
+          @if (links.length) {
+            <p class="mt-3 text-text-muted">
+              {{ ct.otherChannels }}
+              @for (link of links; track link.label; let last = $last) {
+                <a [href]="link.url" target="_blank" rel="noopener" class="font-semibold text-secondary-dark underline-offset-4 hover:underline">{{ link.label }}</a>{{ last ? '' : ' · ' }}
+              }
+            </p>
+          }
 
           <ul class="mt-10 flex flex-wrap justify-center gap-3">
             @for (item of ct.reassurance; track item) {
@@ -50,4 +58,8 @@ export class Contact {
   readonly content = input.required<SiteContent>();
   protected readonly email = SITE.email;
   protected readonly mailto = `mailto:${SITE.email}`;
+  protected readonly links = [
+    { label: 'LinkedIn', url: SITE.links.linkedin },
+    { label: 'Malt', url: SITE.links.malt },
+  ].filter((link) => !!link.url);
 }

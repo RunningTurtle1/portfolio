@@ -14,6 +14,8 @@ export type IconName =
   | 'calendar'
   | 'clipboard-check'
   | 'graduation-cap'
+  | 'key'
+  | 'wrench'
   | 'menu'
   | 'x';
 
@@ -90,6 +92,13 @@ export type IconName =
           <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" />
           <path d="M22 10v6" />
           <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
+        }
+        @case ('key') {
+          <path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z" />
+          <circle cx="16.5" cy="7.5" r=".5" fill="currentColor" />
+        }
+        @case ('wrench') {
+          <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
         }
         @case ('menu') {
           <path d="M4 6h16" />

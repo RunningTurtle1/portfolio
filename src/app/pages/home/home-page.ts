@@ -7,6 +7,7 @@ import { DEFAULT_LANG, Lang, isLang } from '../../site.config';
 import { Seo } from '../../shared/seo';
 import { SiteHeader } from '../../sections/site-header';
 import { Hero } from '../../sections/hero';
+import { Trust } from '../../sections/trust';
 import { Services } from '../../sections/services';
 import { CaseStudies } from '../../sections/case-studies';
 import { Method } from '../../sections/method';
@@ -19,7 +20,7 @@ const CONTENT: Record<Lang, SiteContent> = { fr: FR, en: EN };
 @Component({
   selector: 'app-home-page',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [RouterLink, SiteHeader, Hero, Services, CaseStudies, Method, About, Contact, SiteFooter],
+  imports: [RouterLink, SiteHeader, Hero, Trust, Services, CaseStudies, Method, About, Contact, SiteFooter],
   template: `
     <a
       [routerLink]="['/', currentLang()]"
@@ -30,6 +31,7 @@ const CONTENT: Record<Lang, SiteContent> = { fr: FR, en: EN };
     <app-site-header [content]="c()" [lang]="currentLang()" />
     <main id="contenu" class="font-sans">
       <app-hero [content]="c()" />
+      <app-trust [content]="c()" />
       <app-services [content]="c()" />
       <app-case-studies [content]="c()" />
       <app-method [content]="c()" />

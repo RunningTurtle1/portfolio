@@ -62,6 +62,23 @@ import { SectionHeading } from './section-heading';
             }
           </ul>
         </div>
+
+        <div class="mt-10 rounded-3xl border border-border bg-surface p-7 shadow-card sm:p-9">
+          <h3 class="text-xl font-extrabold text-primary">{{ m.afterDelivery.title }}</h3>
+          <ul class="mt-6 grid gap-6 md:grid-cols-2">
+            @for (item of m.afterDelivery.items; track item.title) {
+              <li class="flex items-start gap-4">
+                <span class="flex size-11 shrink-0 items-center justify-center rounded-2xl bg-background-alt text-secondary">
+                  <app-icon [name]="item.icon" [size]="22" />
+                </span>
+                <span>
+                  <span class="block font-extrabold text-primary">{{ item.title }}</span>
+                  <span class="mt-1 block leading-relaxed text-text-muted">{{ item.text }}</span>
+                </span>
+              </li>
+            }
+          </ul>
+        </div>
       </div>
     </section>
   `,

@@ -42,6 +42,8 @@ textuelles** (problème → solution → impact), avec schémas d'architecture o
 - Missions au forfait, périmètre et budget fixés
 - 100 % remote, en français ou en anglais
 - Missions de quelques jours à quelques mois
+- Client propriétaire de sa solution après livraison
+- Suivi de maintenance optionnel
 
 ## Ton et rédaction
 - Messages courts, directs, centrés sur l'**impact métier**, sans jargon technique dans les sections destinées aux clients
@@ -113,8 +115,9 @@ Accueil (accroche + appel à l'action), Services, Études de cas, Méthode de tr
 - [ ] Lien LinkedIn / Malt / GitHub
 - [x] Email de contact : hayotcamille@gmail.com (bouton principal « Contactez-moi, on discute »)
 - [ ] Autres moyens de contact (formulaire, WhatsApp) ?
-- [ ] Faut-il citer mon employeur actuel par son nom ? (voir note ci-dessous)
 
-## Note de confidentialité
-Je suis actuellement salarié et je veux rester discret sur mon activité freelance vis-à-vis
-de certains collègues. Ne pas nommer mon employeur actuel sur le site sans mon accord explicite.
+## Contact
+Mobile : 0695698274
+email : hayotcamille@gmail.com
+linkedin : https://www.linkedin.com/in/camille-hayot-a77589148/
+matl : https://www.malt.fr/profile/camillehayot1

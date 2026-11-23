@@ -1,13 +1,12 @@
 import { NgOptimizedImage } from '@angular/common';
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { SiteContent } from '../i18n/content.model';
-import { Icon } from '../shared/icon';
 import { SectionHeading } from './section-heading';
 
 @Component({
   selector: 'app-about',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [NgOptimizedImage, Icon, SectionHeading],
+  imports: [NgOptimizedImage, SectionHeading],
   styleUrl: './about.scss',
   template: `
     @let a = content().about;
@@ -29,25 +28,7 @@ import { SectionHeading } from './section-heading';
             <p class="mt-5 max-w-2xl text-lg leading-relaxed text-text">{{ p }}</p>
           }
 
-          <div class="mt-10 grid gap-6 md:grid-cols-2">
-            <div class="rounded-3xl bg-surface p-6 shadow-card">
-              <h3 class="flex items-center gap-2 font-extrabold text-primary">
-                <app-icon name="graduation-cap" [size]="20" class="text-secondary" />
-                {{ a.educationTitle }}
-              </h3>
-              <ul class="mt-4 space-y-4">
-                @for (e of a.education; track e.title) {
-                  <li>
-                    <p class="font-semibold text-primary">{{ e.title }}</p>
-                    <p class="text-sm text-text-muted">{{ e.school }} · {{ e.years }}</p>
-                    @if (e.note) {
-                      <p class="mt-1 text-sm font-semibold text-accent-dark">{{ e.note }}</p>
-                    }
-                  </li>
-                }
-              </ul>
-            </div>
-
+          <div class="mt-10 max-w-2xl">
             <div class="rounded-3xl bg-surface p-6 shadow-card">
               <h3 class="font-extrabold text-primary">{{ a.stackTitle }}</h3>
               @for (group of [a.stackMain, a.stackExtra]; track group.label; let first = $first) {

@@ -44,6 +44,8 @@ export interface SiteContent {
     titleLine2: string;
     subtitle: string;
     subtitleStrong: string;
+    /** Phrase de différenciation (formation compta / gestion). */
+    lead: string;
     pills: { icon: IconName; label: string; featured?: boolean }[];
     flow: { icon: IconName; label: string; featured?: boolean }[];
     ctaPrimary: string;
@@ -51,6 +53,7 @@ export interface SiteContent {
     contactCardTitle: string;
     stats: { value: string; label: string }[];
   };
+  trust: { title: string };
   services: { eyebrow: string; title: string; intro: string; featuredBadge: string; items: Service[] };
   cases: {
     eyebrow: string;
@@ -66,18 +69,25 @@ export interface SiteContent {
     steps: MethodStep[];
     firstVersion: { title: string; items: string[] };
     commitments: { icon: IconName; title: string; text: string }[];
+    afterDelivery: { title: string; items: { icon: IconName; title: string; text: string }[] };
   };
   about: {
     eyebrow: string;
     title: string;
     paragraphs: string[];
     photoAlt: string;
-    educationTitle: string;
-    education: { title: string; school: string; years: string; note?: string }[];
     stackTitle: string;
     stackMain: { label: string; items: string[] };
     stackExtra: { label: string; items: string[] };
   };
-  contact: { eyebrow: string; title: string; text: string; cta: string; orWrite: string; reassurance: string[] };
+  contact: {
+    eyebrow: string;
+    title: string;
+    text: string;
+    cta: string;
+    orWrite: string;
+    otherChannels: string;
+    reassurance: string[];
+  };
   footer: { tagline: string; rights: string };
 }

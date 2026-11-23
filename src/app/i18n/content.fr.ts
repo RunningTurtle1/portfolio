@@ -26,6 +26,7 @@ export const FR: SiteContent = {
     titleLine2: 'plus de valeur créée.',
     subtitle: 'Le temps est précieux.',
     subtitleStrong: 'Automatisez-le.',
+    lead: 'Formé à la comptabilité et au contrôle de gestion, je conçois des outils pensés pour votre rentabilité et votre trésorerie, pas seulement pour la technique.',
     pills: [
       { icon: 'zap', label: 'Automatisation', featured: true },
       { icon: 'monitor', label: 'Refonte de site web' },
@@ -45,11 +46,12 @@ export const FR: SiteContent = {
       { value: '100 %', label: 'à distance, au forfait' },
     ],
   },
+  trust: { title: 'Ils m’ont fait confiance' },
   services: {
     eyebrow: 'Services',
     title: 'Ce que je peux faire pour vous',
     intro:
-      'Je pars de vos irritants du quotidien et je livre un outil qui fait gagner du temps à vos équipes, dès les premières semaines.',
+      'Je pars de vos problèmes du quotidien et je raisonne comme un gestionnaire : combien de temps et d’argent ce processus vous coûte-t-il ? Puis je livre un outil qui en fait gagner à vos équipes, dès les premières semaines.',
     featuredBadge: 'Service principal',
     items: [
       {
@@ -70,20 +72,20 @@ export const FR: SiteContent = {
         pitch:
           'Un site daté, lent ou difficile à mettre à jour freine votre activité. Je le reconstruis rapide, clair et adapté au mobile.',
         benefits: [
-          'Un site moderne qui inspire confiance',
-          'Pages rapides et bien référencées',
-          'Contenus faciles à faire évoluer',
+          'Un site rapide sur mobile, conçu pour bien se classer sur Google',
+          'Vos textes et vos pages modifiables par vous-même, sans développeur',
+          'Vos contenus et votre référencement actuel conservés lors de la migration',
         ],
       },
       {
         icon: 'gauge',
         title: 'Optimisation',
         pitch:
-          'Votre application existante est lente, instable ou coûteuse à maintenir ? Je trouve ce qui bloque et je le corrige.',
+          'Votre application existante est lente, instable ou coûteuse à maintenir ? Je commence par un audit : je mesure, j’identifie les causes et je vous remets un plan d’action chiffré avant de corriger.',
         benefits: [
-          'Temps de chargement réduits',
-          'Moins de pannes et d’incidents',
-          'Une base saine pour les prochaines évolutions',
+          'Un diagnostic écrit : ce qui ralentit, ce qui casse, ce qui coûte',
+          'Des corrections priorisées selon leur impact sur votre activité',
+          'Des gains mesurés avant / après (temps de réponse, incidents)',
         ],
       },
     ],
@@ -103,7 +105,7 @@ export const FR: SiteContent = {
     },
     items: [
       {
-        title: 'Encaissements automatisés pour une plateforme de communication',
+        title: 'Un suivi des paiements clients automatisé de bout en bout',
         context: 'Plateforme SaaS de communication',
         period: 'Depuis 2022',
         ongoing: true,
@@ -120,8 +122,8 @@ export const FR: SiteContent = {
         stack: ['Node.js', 'TypeScript', 'Fonctions serverless (AWS Lambda)', 'API REST'],
       },
       {
-        title: 'Modernisation d’une plateforme de prise de rendez-vous',
-        context: 'My Simply Agenda',
+        title: 'Une plateforme vieillissante modernisée, sans repartir de zéro',
+        context: 'Plateforme SaaS de prise de rendez-vous',
         period: '2021 – 2022',
         problem:
           'Une plateforme SaaS de prise de rendez-vous vieillissante, difficile à faire évoluer et à maintenir.',
@@ -137,7 +139,7 @@ export const FR: SiteContent = {
       },
       {
         title: 'Des audits papier et Excel remplacés par une application',
-        context: 'Free · Pôle sécurité',
+        context: 'Application métier interne',
         period: '2019 – 2021',
         problem:
           'Les audits de sécurité étaient gérés sur papier et dans des fichiers Excel : ressaisies, versions multiples, suivi difficile.',
@@ -187,10 +189,25 @@ export const FR: SiteContent = {
       ],
     },
     commitments: [
-      { icon: 'tag', title: 'Au forfait', text: 'Périmètre et budget fixés avant de démarrer. Pas de surprise.' },
+      { icon: 'tag', title: 'Au forfait', text: 'Périmètre et budget fixés avant de démarrer. Sans surprise.' },
       { icon: 'globe', title: '100 % à distance', text: 'En français ou en anglais, avec des points réguliers.' },
       { icon: 'calendar', title: 'De quelques jours à quelques mois', text: 'Une mission adaptée à la taille de votre besoin.' },
     ],
+    afterDelivery: {
+      title: 'Après la mise en ligne',
+      items: [
+        {
+          icon: 'key',
+          title: 'Vous êtes propriétaire de votre outil',
+          text: 'Le code source et la solution vous appartiennent. Vous pouvez la faire évoluer comme vous le souhaitez, avec ou sans moi.',
+        },
+        {
+          icon: 'wrench',
+          title: 'Une maintenance si vous le souhaitez',
+          text: 'Un forfait de maintenance optionnel pour les corrections, les mises à jour et les petites évolutions.',
+        },
+      ],
+    },
   },
   about: {
     eyebrow: 'À propos',
@@ -200,20 +217,6 @@ export const FR: SiteContent = {
       'Avant le code, j’ai étudié la comptabilité et le contrôle de gestion. Je comprends vos enjeux de rentabilité, de trésorerie et de pilotage : chaque projet est pensé pour un gain mesurable.',
     ],
     photoAlt: 'Portrait de Camille Hayot',
-    educationTitle: 'Formation',
-    education: [
-      {
-        title: 'Titre RNCP niveau III · Développeur web',
-        school: 'OpenClassrooms',
-        years: '2018 – 2019',
-      },
-      {
-        title: 'Licence AES · Comptabilité et contrôle de gestion',
-        school: 'Université Paris Nanterre',
-        years: '2013 – 2016',
-        note: 'Un vrai plus pour comprendre vos enjeux financiers',
-      },
-    ],
     stackTitle: 'Technologies',
     stackMain: {
       label: 'Au quotidien',
@@ -227,6 +230,7 @@ export const FR: SiteContent = {
     text: 'Décrivez-moi en quelques lignes la tâche qui vous fait perdre du temps. Je vous réponds sous 48 h avec une première idée de solution.',
     cta: 'Contactez-moi, on discute',
     orWrite: 'ou écrivez-moi directement à',
+    otherChannels: 'Retrouvez-moi aussi sur',
     reassurance: ['Échange sans engagement', 'Devis au forfait', 'Français ou anglais'],
   },
   footer: {

@@ -10,11 +10,22 @@ export const SITE = {
   url: '',
   /** Liens externes : laisser vide pour les masquer. */
   links: {
-    linkedin: '',
-    malt: '',
+    linkedin: 'https://www.linkedin.com/in/camille-hayot-a77589148/',
+    malt: 'https://www.malt.fr/profile/camillehayot1',
     github: '',
   },
 } as const;
+
+/**
+ * Bandeau « Ils m'ont fait confiance ».
+ * Déposer les logos dans public/images/logos/ (SVG ou PNG à fond transparent) et indiquer le chemin
+ * dans `logo`. Tant que `logo` est vide, le nom s'affiche en texte.
+ * Ne pas ajouter l'employeur actuel sans accord explicite (voir CLAUDE.md).
+ */
+export const CLIENTS: { name: string; logo: string }[] = [
+  { name: 'Free', logo: '' },
+  { name: 'My Simply Agenda', logo: '' },
+];
 
 export const LANGS = ['fr', 'en'] as const;
 export type Lang = (typeof LANGS)[number];
