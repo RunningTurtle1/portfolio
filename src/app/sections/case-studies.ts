@@ -16,15 +16,8 @@ import { SectionHeading } from './section-heading';
         <div class="mt-12 space-y-8">
           @for (item of cs.items; track item.title; let i = $index) {
             <article class="rounded-3xl bg-surface p-6 shadow-card sm:p-10">
-              <header class="flex flex-wrap items-center gap-x-4 gap-y-2">
+              <header>
                 <span class="text-sm font-bold uppercase tracking-[0.12em] text-text-muted">{{ item.context }}</span>
-                <span class="text-sm text-text-muted">· {{ item.period }}</span>
-                @if (item.ongoing) {
-                  <span class="inline-flex items-center gap-2 rounded-full bg-accent-light/60 px-3 py-1 text-xs font-bold text-accent-dark">
-                    <span class="size-2 rounded-full bg-accent ring-4 ring-accent-light"></span>
-                    {{ cs.labels.ongoing }}
-                  </span>
-                }
               </header>
               <h3 class="mt-3 text-2xl font-extrabold tracking-tight text-primary sm:text-3xl">{{ item.title }}</h3>
 

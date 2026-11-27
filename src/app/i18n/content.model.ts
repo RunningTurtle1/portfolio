@@ -16,8 +16,6 @@ export interface Service {
 export interface CaseStudy {
   title: string;
   context: string;
-  period: string;
-  ongoing?: boolean;
   problem: string;
   solution: string;
   impact: string[];
@@ -59,7 +57,7 @@ export interface SiteContent {
     eyebrow: string;
     title: string;
     intro: string;
-    labels: { problem: string; solution: string; impact: string; architecture: string; ongoing: string; stack: string };
+    labels: { problem: string; solution: string; impact: string; architecture: string; stack: string };
     items: CaseStudy[];
   };
   method: {
